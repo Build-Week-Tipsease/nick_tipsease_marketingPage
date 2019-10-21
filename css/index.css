@@ -11,6 +11,9 @@ header .header-bar {
   display: flex;
   flex-direction: row;
 }
+header .header-bar a {
+  text-decoration: none;
+}
 header h1 {
   font-weight: 1000;
   font-size: 2.5rem;
@@ -56,6 +59,9 @@ header .header-content p {
 header .header-content img {
   position: relative;
 }
+.main-section .why-tipswise {
+  display: flex;
+}
 .main-section h3 {
   color: white;
   font-size: 2.3rem;
@@ -83,4 +89,26 @@ header .header-content img {
 .main-section .why-us-icons .icon-div .icon-text {
   position: relative;
   bottom: 1.3rem;
+}
+.FAQ {
+  margin-bottom: 5%;
+}
+.FAQ .question-h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin: 7% 0 8% 0;
+}
+.FAQ .questions {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.FAQ .questions h3 {
+  font-size: 1.4rem;
+}
+.FAQ .questions .question-faq {
+  width: 28%;
+  margin: 5% 5% 0 0;
 }

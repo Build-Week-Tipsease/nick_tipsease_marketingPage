@@ -2,4 +2,86 @@
 
 html, body {
     font-family: 'Lato', sans-serif;
+    background-color: @color-dark;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    .header-bar {
+        display: flex;
+        flex-direction: row;
+    }
+    h1 {
+      font-weight: 1000;
+      font-size: 2.5rem;
+      color: @color-font;
+      margin-right: 20rem;
+    }
+    nav {
+        margin-top: 3rem;
+        a{
+        text-decoration: none;
+        color: @color-font;
+        margin-right: 2rem;
+        font-size: 1.15rem;
+        }
+    }
+    .join-button{
+        margin-top: 4%;
+        margin-left: 5%;
+        a {
+            text-decoration: none;
+            color: @color-font;
+            border: 1px solid white;
+            padding: 0.7rem 1rem;
+            border-radius: 1.5rem;
+        }
+    }
+    .header-content {
+        color: @color-font;
+        margin: 10% 0 0 5%;
+        display: flex;
+        .header-text {
+            width: 45%;
+            margin-right: 10%;
+        }
+        h2 {
+            font-size: 3rem;
+            margin-bottom: -1%;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+        img {
+            position: relative;
+            
+        }
+    }
+}
+
+.main-section {
+    h3 {
+        color: @color-font;
+        font-size: 2.3rem;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .why-us-icons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8%;
+        .icon-div {
+            display: flex;
+            margin-bottom: 7%;
+            color: @color-font;
+            font-size: 1.2rem;
+            img {
+                margin-right: 15%;
+            }
+        }
+    }
 }

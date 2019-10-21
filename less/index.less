@@ -14,6 +14,9 @@ header {
     .header-bar {
         display: flex;
         flex-direction: row;
+        a{
+            text-decoration: none;
+        }
     }
     h1 {
       font-weight: 1000;
@@ -64,6 +67,9 @@ header {
 }
 
 .main-section {
+    .why-tipswise {
+        display: flex;
+    }
     h3 {
         color: @color-font;
         font-size: 2.3rem;
@@ -90,6 +96,31 @@ header {
             position: relative;
             bottom: 1.3rem;
         }
+        }
+    }
+}
+
+//FAQ
+
+.FAQ {
+    margin-bottom: 5%;
+    .question-h1 {
+        text-align: center;
+        color: @color-font;
+        font-size: 2rem;
+        margin: 7% 0 8% 0;
+    }
+    .questions {
+        color: @color-font;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        h3 {
+            font-size: 1.4rem;
+        }
+        .question-faq {
+        width: 28%;
+        margin: 5% 5% 0 0;
         }
     }
 }

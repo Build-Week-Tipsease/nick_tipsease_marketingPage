@@ -38,8 +38,8 @@ header {
         margin-left: 5%;
         a {
             text-decoration: none;
-            color: @color-font;
-            border: 1px solid white;
+            color: @color-call-to-action;
+            border: 1px solid @color-call-to-action;
             padding: 0.7rem 1rem;
             border-radius: 1.5rem;
         }
@@ -104,6 +104,22 @@ header {
 
 .FAQ {
     margin-bottom: 5%;
+    .contact-button {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        h3 {
+            color: @color-font;
+            margin: 4rem 0;
+            font-size: 2rem;
+            background-color: @color-call-to-action;
+            padding: 0.3rem 1rem 0.3rem 1rem;
+            border-radius: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
     .question-h1 {
         text-align: center;
         color: @color-font;

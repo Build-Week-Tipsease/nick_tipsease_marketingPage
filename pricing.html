@@ -32,6 +32,20 @@
             </div>
             </div>
         </header>
+        <section class='pricing-section'>
+            <h1>What ends up in your pocket?</h1>
+            <p>Here at Tipsease you start off with 0.8% fees for every transaction.
+                The more you earn with Tipsease the lower your percentage goes.<br>
+            Please check the calculator below to understand exactly how much you need to pay. </p>
+            <div class='pricing-calculator'>
+                <input id='earnings-input' type='number' name='earnings'>
+                <p v-if='earnings < 1000'>{{percentage-low}}</p>
+                <p v-if='earnings > 3999'>{{percentage-high}}</p>
+                <p v-else>{{percentage-medium}}</p>
+            </div>
+        </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src='vue/calculator.vue'></script>
 </body>
 </html>

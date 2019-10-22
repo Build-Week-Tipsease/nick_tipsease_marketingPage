@@ -35,8 +35,8 @@ header .join-button {
 }
 header .join-button a {
   text-decoration: none;
-  color: white;
-  border: 1px solid white;
+  color: #005E7C;
+  border: 1px solid #005E7C;
   padding: 0.7rem 1rem;
   border-radius: 1.5rem;
 }
@@ -92,6 +92,22 @@ header .header-content img {
 }
 .FAQ {
   margin-bottom: 5%;
+}
+.FAQ .contact-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.FAQ .contact-button h3 {
+  color: white;
+  margin: 4rem 0;
+  font-size: 2rem;
+  background-color: #005E7C;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  border-radius: 10px;
+}
+.FAQ .contact-button a {
+  text-decoration: none;
 }
 .FAQ .question-h1 {
   text-align: center;

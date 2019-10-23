@@ -35,8 +35,8 @@ header .join-button {
 }
 header .join-button a {
   text-decoration: none;
-  color: #005E7C;
-  border: 1px solid #005E7C;
+  color: #0ba5d8;
+  border: 1px solid #0ba5d8;
   padding: 0.7rem 1rem;
   border-radius: 1.5rem;
 }
@@ -97,6 +97,12 @@ header .header-content img {
   position: relative;
   bottom: 1.3rem;
 }
+footer {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin: 5% 0;
+}
 .FAQ {
   margin-bottom: 5%;
 }
@@ -109,7 +115,7 @@ header .header-content img {
   color: white;
   margin: 4rem 0;
   font-size: 2rem;
-  background-color: #005E7C;
+  background-color: #023f53;
   padding: 0.3rem 1rem 0.3rem 1rem;
   border-radius: 10px;
 }
@@ -144,6 +150,13 @@ header .header-content img {
 .pricing-section p {
   font-size: 1.3rem;
 }
+.pricing-section .pricing-calculator .amountToPay-div {
+  width: 150px;
+  border: 1px solid white;
+  position: relative;
+  left: calc(50% - 75px);
+  margin-top: 5%;
+}
 #earnings-input {
   margin-top: 5%;
   width: 30%;
@@ -164,7 +177,7 @@ header .header-content img {
 }
 .contact div a {
   text-decoration: none;
-  color: #005E7C;
+  color: #0ba5d8;
 }
 .contact .contact-h1 {
   font-size: 2rem;

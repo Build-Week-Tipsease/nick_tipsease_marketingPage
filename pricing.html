@@ -39,9 +39,9 @@
             Please check the calculator below to understand exactly how much you need to pay. </p>
             <div class='pricing-calculator'>
                 <input id='earnings-input' type='number' name='earnings'>
-                <p v-if='earnings < 1000'>{{percentage-low}}</p>
-                <p v-if='earnings > 3999'>{{percentage-high}}</p>
-                <p v-else>{{percentage-medium}}</p>
+                <div class='amountToPay-div'>
+                    <p id='amountToPay'>0</p>
+                </div>
             </div>
         </section>
     </div>

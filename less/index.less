@@ -38,8 +38,8 @@ header {
         margin-left: 5%;
         a {
             text-decoration: none;
-            color: @color-call-to-action;
-            border: 1px solid @color-call-to-action;
+            color: @color-call-to-action-header;
+            border: 1px solid @color-call-to-action-header;
             padding: 0.7rem 1rem;
             border-radius: 1.5rem;
         }
@@ -109,6 +109,13 @@ header {
     }
 }
 
+footer {
+    font-size: 1.2rem;
+    color: @color-font;
+    text-align: center;
+    margin: 5% 0;
+}
+
 //FAQ
 
 .FAQ {
@@ -121,7 +128,7 @@ header {
             color: @color-font;
             margin: 4rem 0;
             font-size: 2rem;
-            background-color: @color-call-to-action;
+            background-color: @color-call-to-action-button;
             padding: 0.3rem 1rem 0.3rem 1rem;
             border-radius: 10px;
         }
@@ -158,6 +165,15 @@ header {
     p {
         font-size: 1.3rem;
     }
+    .pricing-calculator {
+        .amountToPay-div {
+            width: 150px;
+            border: 1px solid white;
+            position: relative;
+            left: calc(50% - 75px);
+            margin-top: 5%;
+        }
+    }
 }
 
 #earnings-input {
@@ -183,7 +199,7 @@ header {
         }
         a{
             text-decoration: none;
-            color: @color-call-to-action;
+            color: @color-call-to-action-header;
         }
     }
     .contact-h1 {
@@ -193,3 +209,4 @@ header {
         margin: 7% 0 8% 0;
     }
 }
+

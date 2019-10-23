@@ -38,14 +38,17 @@
                 The more you earn with Tipsease the lower your percentage goes.<br>
             Please check the calculator below to understand exactly how much you need to pay. </p>
             <div class='pricing-calculator'>
-                <input id='earnings-input' type='number' name='earnings'>
-                <p v-if='earnings < 1000'>{{percentage-low}}</p>
-                <p v-if='earnings > 3999'>{{percentage-high}}</p>
-                <p v-else>{{percentage-medium}}</p>
+
+                <input id='earnings-input' type='number'>
+
+                <button id='button'>Calculate</button>
+
+                <div class='amountToPay-div'>
+                    <p id='amountToPay'>0</p>
+                </div>
             </div>
         </section>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src='vue/calculator.vue'></script>
+    <script src='js/price-calc.js'></script>
 </body>
 </html>

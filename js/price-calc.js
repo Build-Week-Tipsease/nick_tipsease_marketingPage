@@ -1,7 +1,6 @@
 
 let input = document.getElementById('earnings-input')
 let button = document.querySelector('button')
-console.log(input);
 
 function calc() {
     let amountToPay = document.getElementById('amountToPay')

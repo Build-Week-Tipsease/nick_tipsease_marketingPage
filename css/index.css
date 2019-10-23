@@ -69,9 +69,21 @@ header .header-content img {
   top: 15%;
   margin-left: -10%;
 }
+.main-section .why-tipswise .main-image2 img {
+  border: 2px solid white;
+  position: relative;
+  top: 20%;
+  margin-left: -10%;
+}
 .main-section h3 {
   color: white;
   font-size: 2.3rem;
+  text-align: center;
+  margin-top: 10%;
+}
+.main-section h2 {
+  color: white;
+  font-size: 3rem;
   text-align: center;
   margin-top: 10%;
 }

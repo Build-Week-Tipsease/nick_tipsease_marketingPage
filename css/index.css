@@ -150,11 +150,17 @@ footer {
 .pricing-section p {
   font-size: 1.3rem;
 }
+.pricing-section .pricing-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-section .pricing-calculator input {
+  margin-bottom: 2%;
+}
 .pricing-section .pricing-calculator .amountToPay-div {
   width: 150px;
   border: 1px solid white;
-  position: relative;
-  left: calc(50% - 75px);
   margin-top: 5%;
 }
 #earnings-input {

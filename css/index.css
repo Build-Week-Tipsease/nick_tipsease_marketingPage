@@ -61,6 +61,13 @@ header .header-content img {
 }
 .main-section .why-tipswise {
   display: flex;
+  justify-content: space-between;
+}
+.main-section .why-tipswise .main-image img {
+  border: 1px solid white;
+  position: relative;
+  top: 15%;
+  margin-left: -10%;
 }
 .main-section h3 {
   color: white;

@@ -8,12 +8,29 @@ html, body {
 .container {
     width: 1200px;
     margin: 0 auto;
+    @media @tablet {
+        width: 800px;
+    }
+    @media @tablet-small {
+        width: 500px;
+    }
+    @media @phone {
+        width: 350px;
+    }
 }
 
 header {
     .header-bar {
         display: flex;
         flex-direction: row;
+        @media @tablet-small {
+            flex-direction: column;
+            align-items: center;
+        }
+        @media @phone{
+            flex-direction: column;
+            align-items: center;
+        }
         a{
             text-decoration: none;
         }
@@ -22,20 +39,55 @@ header {
       font-weight: 1000;
       font-size: 2.5rem;
       color: @color-font;
-      margin-right: 20rem;
+      margin-right: 15rem;
+      @media @tablet {
+        margin-top: 8%;
+      }
+      @media @tablet-small {
+        margin-right: unset;
+        margin-bottom: -1.5rem;
+    }
+    @media @phone {
+        margin-right: unset;
+        margin-bottom: -1.5rem;
+    }
     }
     nav {
         margin-top: 3rem;
+        }
+        @media @tablet {
+            margin-left: 2rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        @media @tablet-small {
+            margin-top: 1rem;
+        }
+        @media @phone {
+            margin-top: 1rem;
+        }
         a{
         text-decoration: none;
         color: @color-font;
         margin-right: 2rem;
         font-size: 1.15rem;
+        @media @tablet {
+            margin-right: 0.7rem;
+        }
+        @media @phone {
+            margin-right: 1rem;
+        }
         }
     }
     .join-button{
         margin-top: 4%;
         margin-left: 5%;
+        @media @phone {
+            display: none;
+        }
+        @media @tablet {
+            display: none;
+        }
         a {
             text-decoration: none;
             color: @color-call-to-action-header;
@@ -46,6 +98,9 @@ header {
     }
     .join-button2{
         margin-top: 8%;
+        @media @tablet-small {
+            display: none;
+        }
         a {
             text-decoration: none;
             color: @color-call-to-action-header;
@@ -58,9 +113,19 @@ header {
         color: @color-font;
         margin: 10% 0 0 5%;
         display: flex;
+        @media @phone {
+            flex-direction: column;
+            align-items: center;
+        }
         .header-text {
             width: 45%;
             margin-right: 10%;
+            @media @phone {
+                width: 100%;
+                margin: unset;
+                align-items: center;
+                text-align: center;
+            }
         }
         h2 {
             font-size: 3rem;
@@ -71,10 +136,14 @@ header {
         }
         img {
             position: relative;
+            @media @phone {
+                position: unset;
+                margin-top: 20%;
+            }
             
         }
     }
-}
+
 
 .main-section {
     .why-tipswise {
@@ -86,6 +155,15 @@ header {
                 position: relative;
                 top: 15%;
                 margin-left: -10%;
+                @media @tablet {
+                    margin-left: 5%;
+                }
+                @media @tablet-small {
+                    display: none;
+                }
+                @media @phone {
+                    display: none;
+                }
             }
         }
         .main-image2 {
@@ -94,6 +172,15 @@ header {
                 position: relative;
                 top: 20%;
                 margin-left: -10%;
+                @media @tablet {
+                    margin-left: 5%;    
+                }
+                @media @tablet-small {
+                    display: none;
+                }
+                @media @phone {
+                    display: none;
+                }
             }
         }
     }
@@ -116,13 +203,29 @@ header {
         flex-direction: column;
         margin-top: 8%;
         width: 55%;
+        @media @phone {
+            width: 100%;
+            align-items: center;
+        }
+        @media @tablet-small {
+            width: 90%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         .icon-div {
             display: flex;
             margin-bottom: 7%;
             color: @color-font;
             font-size: 1.2rem;
+            @media @phone {
+                flex-direction: column;
+                align-items: center;
+            }
             img {
                 margin-right: 15%;
+                @media @phone {
+                    margin: unset;
+                }
             }
         h4 {
             font-size: 1.3rem;
@@ -130,6 +233,10 @@ header {
         .icon-text {
             position: relative;
             bottom: 1.3rem;
+            @media @phone {
+                position: unset;
+                text-align: center;
+            }
         }
         }
     }
@@ -183,6 +290,12 @@ footer {
         }
         .question-faq {
         width: 28%;
+        @media @tablet-small {
+            width: 45%;
+        }
+        @media @phone {
+            width: 100%;
+        }
         margin: 5% 5% 0 0;
         }
     }
@@ -222,8 +335,22 @@ footer {
         display: flex;
         justify-content: center;
         margin-top: 7rem;
+        @media @phone {
+            flex-direction: column;
+            align-items: center;
+        }
+        .icon-contact {
+            @media @phone {
+                margin: unset;
+                margin-bottom: 15%;
+            }  
+        }
         .icon-contact:nth-child(2) {
             margin: 0 10rem;
+            @media @phone {
+                margin: unset;
+                margin-bottom: 15%;
+            }
         }
     }
     div {
@@ -249,10 +376,26 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10%;
+    @media @tablet-small {
+        flex-direction: row;
+    }
+    @media @phone {
+        flex-direction: row;
+        align-items: center;
+    }
     .team-members {
         width: 20%;
         text-align: center;
         color: @color-font;
+        @media @tablet {
+            width: 33%;
+        }
+        @media @tablet-small {
+            width: 50%;
+        }
+        @media @phone {
+            width: 90%;
+        }
         a {
             text-decoration: none;
             color: @color-call-to-action-header;

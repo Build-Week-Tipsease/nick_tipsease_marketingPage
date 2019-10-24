@@ -40,6 +40,16 @@ header .join-button a {
   padding: 0.7rem 1rem;
   border-radius: 1.5rem;
 }
+header .join-button2 {
+  margin-top: 8%;
+}
+header .join-button2 a {
+  text-decoration: none;
+  color: #0ba5d8;
+  border: 1px solid #0ba5d8;
+  padding: 0.7rem 1rem;
+  border-radius: 1.5rem;
+}
 header .header-content {
   color: white;
   margin: 10% 0 0 5%;
@@ -114,6 +124,10 @@ footer {
   color: white;
   text-align: center;
   margin: 5% 0;
+}
+footer a {
+  text-decoration: none;
+  color: #0ba5d8;
 }
 .FAQ {
   margin-bottom: 5%;
@@ -202,4 +216,27 @@ footer {
   color: white;
   text-align: center;
   margin: 7% 0 8% 0;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+.team .team-members {
+  width: 20%;
+  text-align: center;
+  color: white;
+}
+.team .team-members a {
+  text-decoration: none;
+  color: #0ba5d8;
+}
+#team-h1 {
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+}
+#team-h1 a {
+  text-decoration: none;
+  color: #bb1333;
 }

@@ -44,6 +44,16 @@ header {
             border-radius: 1.5rem;
         }
     }
+    .join-button2{
+        margin-top: 8%;
+        a {
+            text-decoration: none;
+            color: @color-call-to-action-header;
+            border: 1px solid @color-call-to-action-header;
+            padding: 0.7rem 1rem;
+            border-radius: 1.5rem;
+        }
+    }
     .header-content {
         color: @color-font;
         margin: 10% 0 0 5%;
@@ -130,6 +140,10 @@ footer {
     color: @color-font;
     text-align: center;
     margin: 5% 0;
+    a {
+        text-decoration: none;
+        color: @color-call-to-action-header;
+    }
 }
 
 //FAQ
@@ -229,4 +243,29 @@ footer {
         text-align: center;
         margin: 7% 0 8% 0;
     }
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    .team-members {
+        width: 20%;
+        text-align: center;
+        color: @color-font;
+        a {
+            text-decoration: none;
+            color: @color-call-to-action-header;
+        }
+    }
+}
+
+#team-h1 {
+    color: @color-font;
+    text-align: center;
+    margin-top: 5%;
+        a{
+            text-decoration: none;
+            color: @color-lambda-red;
+        }
 }

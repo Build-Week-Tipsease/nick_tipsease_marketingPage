@@ -56,12 +56,14 @@ header h1 {
   header h1 {
     margin-right: unset;
     margin-bottom: -1.5rem;
+    align-self: center;
   }
 }
 @media (max-width: 500px) {
   header h1 {
     margin-right: unset;
     margin-bottom: -1.5rem;
+    margin-left: 5%;
   }
 }
 header nav {
